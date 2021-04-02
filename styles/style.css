@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  height: 100vh;
+  height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +87,7 @@ body {
   transition: ease-in-out 0.5s;
 }
 .start:hover {
-  background-color: white;
+  background-color: #ffffffe0;
   color: black;
 }
 
@@ -95,6 +95,38 @@ body {
   display: none;
 }
 
-.reduced {
-  height: 1px;
+.list {
+  list-style: none;
+}
+
+.footer {
+  background-color: #ffffffe0;
+  font-family: "Nunito", sans-serif;
+  color: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 5vh;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4vh;
+}
+
+.nav {
+  display: flex;
+}
+.link {
+  color: black;
+  padding-right: 1.5rem;
+  transition: ease 0.5s;
+}
+.link:hover {
+  color: red;
+}
+
+.fa-cat {
+  color: red;
 }
