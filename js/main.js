@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const squares = document.querySelectorAll(".grid div");
   const result = document.querySelector(".result");
   const displayCurrentPlayer = document.querySelector(".current-player");
-  let currentPlayer = 1;
+  let currentPlayer = "The Empire";
   const winningArrays = [
     [0, 1, 2, 3],
     [41, 40, 39, 38],
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
         square3.classList.contains("player-one") &&
         square4.classList.contains("player-one")
       ) {
-        result.innerHTML = "Player One Wins!";
+        result.innerHTML = "The Empire Wins!";
       }
       //check those squares to see if they all have the class of player-two
       if (
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
         square3.classList.contains("player-two") &&
         square4.classList.contains("player-two")
       ) {
-        result.innerHTML = "Player Two Wins!";
+        result.innerHTML = "Rebels Wins!";
       }
     }
   }
@@ -112,18 +112,18 @@ document.addEventListener("DOMContentLoaded", () => {
         squares[i + 7].classList.contains("taken") &&
         !squares[i].classList.contains("taken")
       ) {
-        if (currentPlayer == 1) {
+        if (currentPlayer == "The Empire") {
           squares[i].classList.add("taken");
           squares[i].classList.add("player-one");
-          currentPlayer = 2;
+          currentPlayer = "Rebels";
           displayCurrentPlayer.innerHTML = currentPlayer;
-        } else if (currentPlayer == 2) {
+        } else if (currentPlayer == "Rebels") {
           squares[i].classList.add("taken");
           squares[i].classList.add("player-two");
-          currentPlayer = 1;
+          currentPlayer = "The Empire";
           displayCurrentPlayer.innerHTML = currentPlayer;
         }
-      } else alert("cant go here");
+      }
       checkBoard();
     };
   }

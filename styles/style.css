@@ -1,22 +1,63 @@
+body {
+  background-image: url(//media1.tenor.com/images/8470dab55b7d5e9383b1e8f1fe946a5d/tenor.gif?itemid=10704576);
+  color: white;
+}
+
+.result {
+  display: inline-block;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.4em;
+}
+
 .grid {
-  border: 1px solid;
-  width: 140px;
-  height: 120px;
+  width: 644px;
+  height: 540px;
   display: flex;
   flex-wrap: wrap;
+  padding: 10px;
+  padding-bottom: 18px;
+  border-radius: 5px;
 }
 
 .grid div {
-  width: 20px;
-  height: 20px;
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.player {
+  border: 1px solid white;
 }
 
 .player-one {
   background-color: red;
-  border-radius: 10px;
+  background-image: url(../images/empire.png);
+  background-size: cover;
+  border-radius: 50%;
+  transition: ease-in-out 0.7s;
+  box-shadow: 1px 1px 8px 6px white;
 }
 
 .player-two {
-  background-color: rgb(0, 110, 255);
-  border-radius: 10px;
+  background-color: white;
+  background-image: url(../images/rebel.png);
+  background-size: cover;
+  border-radius: 50%;
+  transition: ease-in-out 0.7s;
+  box-shadow: 1px 2px 8px 6px white;
+}
+
+.current-player {
+  text-align: center;
+  font-size: 2.4em;
+  font-family: "Righteous", cursive;
 }
