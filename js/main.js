@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const squares = document.querySelectorAll(".grid div");
   const result = document.querySelector(".result");
   const displayCurrentPlayer = document.querySelector(".current-player");
+  const startButton = document.querySelector(".start");
   let currentPlayer = "The Empire";
   const winningArrays = [
     [0, 1, 2, 3],
@@ -77,6 +78,10 @@ document.addEventListener("DOMContentLoaded", () => {
     [13, 20, 27, 34],
   ];
 
+  startButton.addEventListener("click", () => {
+    location.reload();
+  });
+
   function checkBoard() {
     for (let y = 0; y < winningArrays.length; y++) {
       const square1 = squares[winningArrays[y][0]];
@@ -93,6 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ) {
         result.innerHTML = "The Empire Wins!";
         result.classList.remove("hide");
+        squares.forEach((item) => item.classList.add("hide"));
       }
       //check those squares to see if they all have the class of player-two
       if (
@@ -103,6 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ) {
         result.innerHTML = "Rebels Wins!";
         result.classList.remove("hide");
+        squares.forEach((item) => item.classList.add("hide"));
       }
     }
   }
