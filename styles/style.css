@@ -132,12 +132,12 @@ body {
   color: red;
 }
 
-@media all and (min-width: 768px) {
+@media all and (max-width: 768px) {
   .result {
     font-size: 4em;
   }
 }
-@media all and (min-width: 320px) {
+@media all and (max-width: 320px) {
   .result {
     font-size: 1.6em;
   }
