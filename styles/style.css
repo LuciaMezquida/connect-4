@@ -26,8 +26,8 @@ body {
 }
 
 .grid {
-  width: 650px;
-  height: 540px;
+  width: 795px;
+  height: 670px;
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
@@ -36,8 +36,8 @@ body {
 }
 
 .grid div {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   margin: 5px;
   border-radius: 50%;
 }
@@ -132,12 +132,12 @@ body {
   color: red;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1024px) {
   .result {
     font-size: 4em;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 768px) {
   .result {
     font-size: 1.6em;
   }
