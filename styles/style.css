@@ -71,7 +71,7 @@ body {
 
 .current-player {
   text-align: center;
-  font-size: 2.8em;
+  font-size: 3em;
   font-family: "Righteous", cursive;
 }
 
@@ -85,6 +85,7 @@ body {
   border-radius: 5px;
   margin-top: 4%;
   transition: ease-in-out 0.5s;
+  outline: none;
 }
 .start:hover {
   background-color: #ffffffe0;
@@ -129,4 +130,38 @@ body {
 
 .fa-cat {
   color: red;
+}
+
+@media all and (min-width: 768px) {
+  .result {
+    font-size: 4em;
+  }
+}
+@media all and (min-width: 320px) {
+  .result {
+    font-size: 1.6em;
+  }
+  .start {
+    font-size: 1.2em;
+  }
+  .footer {
+    font-size: 0.8em;
+  }
+  .current-player {
+    font-size: 1.2em;
+  }
+  .player-title {
+    font-size: 0.8em;
+  }
+  .grid {
+    width: 284px;
+    height: 240px;
+    padding: 5px;
+  }
+
+  .grid div {
+    width: 35px;
+    height: 35px;
+    margin: 2px;
+  }
 }
