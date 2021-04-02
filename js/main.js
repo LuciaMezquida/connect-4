@@ -98,7 +98,10 @@ document.addEventListener("DOMContentLoaded", () => {
       ) {
         result.innerHTML = "The Empire Wins!";
         result.classList.remove("hide");
-        squares.forEach((item) => item.classList.add("hide"));
+        startButton.classList.remove("hide");
+        result.nextElementSibling.remove();
+        startButton.nextElementSibling.remove();
+        squares.length = 0;
       }
       //check those squares to see if they all have the class of player-two
       if (
@@ -109,7 +112,9 @@ document.addEventListener("DOMContentLoaded", () => {
       ) {
         result.innerHTML = "Rebels Wins!";
         result.classList.remove("hide");
-        squares.forEach((item) => item.classList.add("hide"));
+        startButton.classList.remove("hide");
+        result.nextElementSibling.remove();
+        startButton.nextElementSibling.remove();
       }
     }
   }

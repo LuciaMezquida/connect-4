@@ -12,10 +12,7 @@ body {
 .result {
   font-size: 5.2em;
   font-family: "Righteous", cursive;
-}
-
-.hide {
-  display: none;
+  transition: ease-in-out 0.5s;
 }
 
 .container {
@@ -54,7 +51,7 @@ body {
   background-image: url(../images/empire.png);
   background-size: cover;
   border-radius: 50%;
-  transition: ease-in-out 0.7s;
+  transition: ease-in-out 0.5s;
   box-shadow: 1px 1px 8px 6px white;
 }
 
@@ -63,11 +60,12 @@ body {
   background-image: url(../images/rebel.png);
   background-size: cover;
   border-radius: 50%;
-  transition: ease-in-out 0.7s;
+  transition: ease-in-out 0.5s;
   box-shadow: 1px 2px 8px 6px white;
 }
 
-.player-container {
+.player-message {
+  text-align: center;
   margin-top: 4%;
 }
 
@@ -75,4 +73,28 @@ body {
   text-align: center;
   font-size: 2.8em;
   font-family: "Righteous", cursive;
+}
+
+.start {
+  font-size: 2.8em;
+  color: white;
+  background-color: transparent;
+  font-family: "Righteous", cursive;
+  border: 2px solid white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-top: 4%;
+  transition: ease-in-out 0.5s;
+}
+.start:hover {
+  background-color: white;
+  color: black;
+}
+
+.hide {
+  display: none;
+}
+
+.reduced {
+  height: 1px;
 }
