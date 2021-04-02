@@ -92,6 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
         square4.classList.contains("player-one")
       ) {
         result.innerHTML = "The Empire Wins!";
+        result.classList.remove("hide");
       }
       //check those squares to see if they all have the class of player-two
       if (
@@ -101,6 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
         square4.classList.contains("player-two")
       ) {
         result.innerHTML = "Rebels Wins!";
+        result.classList.remove("hide");
       }
     }
   }
